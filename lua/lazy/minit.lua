@@ -60,7 +60,7 @@ function M.setup(opts)
   vim.o.loadplugins = true
   require("lazy").setup(opts)
   if vim.g.colors_name == nil then
-    vim.cmd("colorscheme habamax")
+    vim.cmd("colorscheme default")
   end
   require("lazy").update():wait()
   if vim.bo.filetype == "lazy" then
