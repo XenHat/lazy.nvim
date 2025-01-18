@@ -81,21 +81,21 @@ function M.setup(opts)
 end
 
 function M.repro(opts)
-  opts = M.extend({
-    spec = {
-      {
-        "folke/tokyonight.nvim",
-        priority = 1000,
-        lazy = false,
-        config = function()
-          require("tokyonight").setup({ style = "moon" })
-          require("tokyonight").load()
-        end,
-      },
-    },
-    install = { colorscheme = { "tokyonight" } },
-  }, opts)
-  M.setup(opts)
+  -- opts = M.extend({
+  --   spec = {
+  --     {
+  --       "folke/tokyonight.nvim",
+  --       priority = 1000,
+  --       lazy = false,
+  --       config = function()
+  --         require("tokyonight").setup({ style = "moon" })
+  --         require("tokyonight").load()
+  --       end,
+  --     },
+  --   },
+  --   install = { colorscheme = { "default" } },
+  -- }, opts)
+  -- M.setup(opts)
 end
 
 M.minitest = {}
